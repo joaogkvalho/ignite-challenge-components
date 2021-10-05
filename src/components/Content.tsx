@@ -36,12 +36,11 @@ export function Content({ selectedGenre, movies }: ContentProps) {
         <div className="movies-list">
           {movies.map(movie => (
             <MovieCard
-              key
-              ={movie.imdbID}
+              key={movie.imdbID}
               title={movie.Title}
               poster={movie.Poster}
               runtime={movie.Runtime}
-              rating={movie.Ratings[0].Value} 
+              rating={movie.Ratings[0].Value}
             />
           ))}
         </div>
