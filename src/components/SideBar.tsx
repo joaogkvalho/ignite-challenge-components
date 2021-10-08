@@ -1,6 +1,4 @@
 import { Button } from '../components/Button';
-import { api } from '../services/api';
-
 
 interface GenreResponseProps {
   id: number;
